@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Calculator</string>
+    <string name="login">உள்நுழைய</string>
+    <string name="password">அடையாளச்சொல்</string>
+    <string name="change_language">மொழியை மாற்றுங்கள்</string>
+    <string name="username">பயனர்பெயர்</string>
+    <string name="_3">௩</string>
+    <string name="_2">௨</string>
+    <string name="_1">௧</string>
+    <string name="_7">௭</string>
+    <string name="_8">௮</string>
+    <string name="_9">௯</string>
+    <string name="_4">௪</string>
+    <string name="_5">௫</string>
+    <string name="_6">௬</string>
+    <string name="_0">௦</string>
+</resources>
