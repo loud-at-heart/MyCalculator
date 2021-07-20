@@ -7,6 +7,7 @@ import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_main.*
@@ -93,5 +94,9 @@ class MainActivity : AppCompatActivity() {
         editor.putString("My_Lang",s)
         editor.apply()
 
+    }
+
+    fun gotobleh(view: View) {
+        startActivity(Intent(this,bleh::class.java))
     }
 }

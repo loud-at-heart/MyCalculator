@@ -1,9 +1,11 @@
 package com.example.mycalculator
 
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_calc.*
 
@@ -149,16 +151,25 @@ class CalcActivity : AppCompatActivity() {
                 finalNumber=oldNumber.toDouble() + newNumber.toDouble()
             }
         }
-        viewer.setText("$oldNumber $op $newNumber ")
         if (finalNumber != null) {
             if (finalNumber.isNaN()) {
                 // Show Error Message
-                input.setText("0.0")
-                output.setText("Error")
-                output.setTextColor(ContextCompat.getColor(this, R.color.red))
-//                isNewOp=false
+//                input.setText("0.0")
+//                output.setText("Error")
+//                output.setTextColor(ContextCompat.getColor(this, R.color.red))
+                val mBuilder = AlertDialog.Builder(this@CalcActivity)
+                    .setTitle("Error")
+                    .setMessage("$oldNumber $op $newNumber cannot be evaluated")
+                    .setPositiveButton("ok"){
+                            dialog, which ->
+                        viewer.setText("")
+                        input.setText("0")
+                        output.setText("")
+                    }.show()
+                isNewOp=false
             } else {
                 // Show Result
+                viewer.setText("$oldNumber $op $newNumber ")
                 input.setText(finalNumber.toString())
                 output.setText(finalNumber.toString())
                 output.setTextColor(ContextCompat.getColor(this, R.color.green))
