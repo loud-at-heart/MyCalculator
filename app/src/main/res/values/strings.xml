@@ -15,4 +15,5 @@
     <string name="_6">6</string>
     <string name="_0">0</string>
     <string name="switch_to_intent">Switch to Intent</string>
+    <string name="click_for_popup">Click for PopUp</string>
 </resources>

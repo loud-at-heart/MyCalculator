@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
 //            if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password)){
 //                Toast.makeText(this@MainActivity, "Please Enter valid Username/Password", Toast.LENGTH_SHORT).show()
 //            }
+
+
+
             if(username.toString().trim()=="pritam".trim()&&password.toString().trim()=="abc".trim()){
                 startActivity(Intent(this,CalcActivity::class.java))
             }
@@ -40,6 +43,15 @@ class MainActivity : AppCompatActivity() {
             showChangeLang()
         }
 
+        bt_popup.setOnClickListener{
+            val popup = PopupMenu(this@MainActivity,bt_popup)
+            popup.inflate(R.menu.activity_menu_items)
+            popup.setOnMenuItemClickListener {
+                Toast.makeText(this,"Item :"+it.title,Toast.LENGTH_SHORT).show()
+                true
+            }
+            popup.show()
+        }
     }
 
     private fun loadLocate() {

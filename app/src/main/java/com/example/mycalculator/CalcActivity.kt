@@ -7,13 +7,23 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_calc.*
+import kotlinx.android.synthetic.main.activity_recycler_view.*
+import kotlinx.android.synthetic.main.calc_res_list_layout.*
 
 class CalcActivity : AppCompatActivity() {
+
+    var data = arrayListOf<String>()
+    lateinit var adapter: WordAdapterCalc
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calc)
         getSupportActionBar()?.hide() // Hiding the AppBar
+        recyclerViewCalc.layoutManager = LinearLayoutManager(this)
+        adapter = WordAdapterCalc(data)
+        recyclerViewCalc.adapter = adapter
     }
 
     var isNewOp=true
@@ -173,6 +183,8 @@ class CalcActivity : AppCompatActivity() {
                 input.setText(finalNumber.toString())
                 output.setText(finalNumber.toString())
                 output.setTextColor(ContextCompat.getColor(this, R.color.green))
+                data.add(tv_history.text.toString())
+                adapter.notifyDataSetChanged()
                 isNewOp=true
             }
         }
