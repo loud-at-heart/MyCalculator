@@ -21,9 +21,9 @@ class CalcActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calc)
         getSupportActionBar()?.hide() // Hiding the AppBar
-        recyclerViewCalc.layoutManager = LinearLayoutManager(this)
-        adapter = WordAdapterCalc(data)
-        recyclerViewCalc.adapter = adapter
+//        recyclerViewCalc.layoutManager = LinearLayoutManager(this)
+//        adapter = WordAdapterCalc(data)
+//        recyclerViewCalc.adapter = adapter
     }
 
     var isNewOp=true
@@ -183,8 +183,8 @@ class CalcActivity : AppCompatActivity() {
                 input.setText(finalNumber.toString())
                 output.setText(finalNumber.toString())
                 output.setTextColor(ContextCompat.getColor(this, R.color.green))
-                data.add(tv_history.text.toString())
-                adapter.notifyDataSetChanged()
+//                data.add(tv_history.text.toString())
+//                adapter.notifyDataSetChanged()
                 isNewOp=true
             }
         }

@@ -16,40 +16,41 @@
         android:background="@color/io_background"
         android:orientation="vertical">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="76dp">
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="76dp">-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerViewCalc"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:layout_editor_absoluteX="1dp"
-                    tools:layout_editor_absoluteY="1dp" />
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/recyclerViewCalc"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    tools:layout_editor_absoluteX="1dp"-->
+<!--                    tools:layout_editor_absoluteY="1dp" />-->
 
-            </LinearLayout>
-        </ScrollView>
+<!--            </LinearLayout>-->
+<!--        </ScrollView>-->
 
         <TextView
             android:id="@+id/viewer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:textSize="30sp"
             android:textColor="@color/white"
+            android:textSize="30sp"
             tools:text="5+10-3" />
+
         <TextView
             android:id="@+id/input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:textSize="30sp"
             android:textColor="@color/white"
+            android:textSize="30sp"
             tools:text="5+10-3" />
 
         <TextView
@@ -57,8 +58,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:textSize="50sp"
             android:textColor="@color/green"
+            android:textSize="50sp"
             tools:text="12" />
 
 

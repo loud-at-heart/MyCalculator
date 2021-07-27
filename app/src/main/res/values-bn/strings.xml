@@ -17,4 +17,6 @@
     <string name="_0">০</string>
     <string name="switch_to_intent">পরবর্তী পৃষ্ঠায় যান</string>
     <string name="click_for_popup">পপআপ জন্য ক্লিক করুন</string>
+    <string name="notification_title">Stand Up Alert!</string>
+    <string name="notification_text">You should stand up and walk around!</string>
 </resources>

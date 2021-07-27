@@ -16,4 +16,9 @@
     <string name="_0">0</string>
     <string name="switch_to_intent">Switch to Intent</string>
     <string name="click_for_popup">Click for PopUp</string>
+    <string name="alarm_on_toast" translatable="false">Alarm is on</string>
+    <string name="alarm_off_toast" translatable="false">Alarm is off</string>
+    <string name="notification_title">Stand Up Alert!</string>
+    <string name="notification_text">You should stand up and walk around!</string>
+
 </resources>

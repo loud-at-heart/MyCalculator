@@ -17,4 +17,6 @@
     <string name="_0">௦</string>
     <string name="switch_to_intent">அடுத்த பக்கத்திற்குச் செல்லவும்</string>
     <string name="click_for_popup">பாப் அப் என்பதைக் கிளிக் செய்க</string>
+    <string name="notification_title">Stand Up Alert!</string>
+    <string name="notification_text">You should stand up and walk around!</string>
 </resources>
